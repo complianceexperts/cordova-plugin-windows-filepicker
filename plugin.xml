@@ -4,12 +4,15 @@
     xmlns:rim="http://www.blackberry.com/ns/widgets"
     xmlns:android="http://schemas.android.com/apk/res/android"
     id="cordova-plugin-windows-filepicker"
-    version="0.1.7">
+    version="0.2.0">
+    <engines>
+        <engine name="cordova" version=">=6.0.0" />
+    </engines>
     <name>WindowsFilePicker</name>
     <description>Cordova Windows File Picker Plugin</description>
     <license>Apache 2.0</license>
     <keywords>cordova,file picker</keywords>
-    <repo>https://github.com/dilhan2013/cordova-plugin-windows-filepicker.git</repo>
+    <repo>https://github.com/complianceexperts/cordova-plugin-windows-filepicker.git</repo>
 
     <js-module src="www/WindowsFilePicker.js" name="WindowsFilePicker">
         <clobbers target="cordova.plugins.WindowsFilePicker" />
