@@ -3,6 +3,10 @@
     var WindowsFilePicker = function () { };
 
     WindowsFilePicker.prototype = {
+        open: function (success, fail, fileTypes) {
+            // Mapping for old Api
+            cordova.exec(success, fail, "WindowsFilePicker", "pickFile", [fileTypes]);
+        },
         pickFile: function (success, fail, fileTypes) {
             cordova.exec(success, fail, "WindowsFilePicker", "pickFile", [fileTypes]);
         },
